@@ -10,7 +10,7 @@ using namespace std;
     }
 
     // Overloaded Constructer
-    Patient::Patient(double pid,string pname,string paddress,double pcontactnumber,string pemail,int patientage,string psex,string bg)
+    Patient::Patient(double pid,string pname,string paddress,string pcontactnumber,string pemail,int patientage,string psex,string bg)
     {
        this->id=pid;
        this->name= pname;
@@ -33,11 +33,11 @@ using namespace std;
         return id;
     }
 
-    void Patient::setpatientname(string pname)
+    void Patient::setName(string pname)
     {
         this->name= pname;
     }
-    string Patient::getpatientname()
+    string Patient::getName()
     {
         return name;
     }
@@ -51,11 +51,11 @@ using namespace std;
         return address;
     }
 
-    void Patient::setcontactnumber(double pcontactnumber)
+    void Patient::setcontactnumber(string pcontactnumber)
     {
         this->contactnumber= pcontactnumber;
     }
-    double Patient::getcontactnumber()
+    string Patient::getcontactnumber()
     {
         return contactnumber;
     }

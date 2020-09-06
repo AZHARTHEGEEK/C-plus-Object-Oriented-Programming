@@ -3,9 +3,11 @@
 using namespace std;
 
     //Default Constructer
-    Hospital::Hospital()
+Hospital::Hospital()
     {
+
     }
+
     // Overloaded Constructer
     Hospital::Hospital(double RgNo,string HName,string HAddress,string porph)
     {
@@ -17,7 +19,7 @@ using namespace std;
 
     void Hospital::setPublicOrPrivateHospital(string porph)
     {
-        Ownership=porph;
+        this->Ownership=porph;
     }
     string Hospital::getPublicOrPrivateHospital()
     {
@@ -28,10 +30,12 @@ using namespace std;
     {
         cout<<endl<<"\t\t\t*************************************************";
         cout<<endl<<"\t\t\t**************Hospital Information***************";
-        cout<<endl<<endl<<"Registration Number : "<<Patient::id;
-        cout<<endl<<"Name : "<<Patient::name;
-        cout<<endl<<"Address : "<<Patient::address;
-        cout<<endl<<"Ownership : "<<Hospital::address;
+        cout<<endl<<endl<<"\t\t\tRegistration Number : "<<Patient::id;
+        cout<<endl<<"\t\t\tName : "<<Patient::name;
+        cout<<endl<<"\t\t\tAddress : "<<Patient::address;
+        cout<<endl<<"\t\t\tOwnership : "<<Hospital::Ownership;
         cout<<endl<<"\t\t\t*************************************************";
 
     }
+
+

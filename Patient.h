@@ -7,7 +7,7 @@ public:
     double id;
     string name;
     string address;
-    double contactnumber;
+    string contactnumber;
     string email;
     int age;
     string sex;
@@ -21,21 +21,21 @@ public:
     Patient();
 
     //OverLoaded Constructer
-    Patient(double,string,string,double,string,int,string,string);
+    Patient(double ,string ,string ,string ,string ,int ,string ,string);
 
 
 
     void setid(double);
     double getid();
 
-    void setpatientname(string);
-    string getpatientname();
+    void setName(string);
+    string getName();
 
     void setaddress(string);
     string getaddress();
 
-    void setcontactnumber(double);
-    double getcontactnumber();
+    void setcontactnumber(string);
+    string getcontactnumber();
 
     void setemail(string);
     string getemail();

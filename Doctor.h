@@ -16,7 +16,7 @@ public:
 
 public:
     Doctor();
-    Doctor(string,string,int,int,int);
+    Doctor(string,string,int,int);//,int);
 
     void setSpecialization(string);
     string getSpecialization();

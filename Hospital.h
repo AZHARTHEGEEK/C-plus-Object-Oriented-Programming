@@ -1,6 +1,4 @@
-//#ifndef included_HOSPITAL_H
-//#define included_HOSPITAL_H
-
+#include <iostream>
 #ifndef Hospital_H
 #define Hospital_H
 using namespace std;
@@ -14,9 +12,13 @@ private:
 
 
 public:
+    Hospital();
+    int objNo;
+    static int objCnt;
+
     string Ownership;
     //Default Constructer
-    Hospital();
+
     // Overloaded Constructer
     Hospital(double,string,string,string);
 
