@@ -32,6 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Disease.cpp" />
+		<Unit filename="Disease.h" />
+		<Unit filename="Doctor.cpp" />
+		<Unit filename="Doctor.h" />
+		<Unit filename="Hospital.cpp" />
+		<Unit filename="Hospital.h" />
+		<Unit filename="Patient.cpp" />
+		<Unit filename="Patient.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

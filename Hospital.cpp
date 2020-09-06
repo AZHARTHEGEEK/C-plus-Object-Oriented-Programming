@@ -5,50 +5,33 @@ using namespace std;
     //Default Constructer
     Hospital::Hospital()
     {
-
     }
     // Overloaded Constructer
-    Hospital::Hospital(double RgNo,string HName,string HAddress)
+    Hospital::Hospital(double RgNo,string HName,string HAddress,string porph)
     {
-    this->HospitalRegistrationNumber=RgNo;
-    this->HospitalName=HName;
-    this->Address=HAddress;
+    this->id = RgNo;
+    this->name=HName;
+    this->address=address;
+    this->Ownership=porph;
     }
 
-    void Hospital::setHospitalRegistrationNumber(double RgNo)
+    void Hospital::setPublicOrPrivateHospital(string porph)
     {
-        this->HospitalRegistrationNumber=RgNo;
+        Ownership=porph;
     }
-    double Hospital::getHospitalRegistrationNumber()
+    string Hospital::getPublicOrPrivateHospital()
     {
-        return HospitalRegistrationNumber;
-    }
-
-    void Hospital::setHospitalName(string HName)
-    {
-        this->HospitalName=HName;
-    }
-    string Hospital::getHospitalName()
-    {
-        return HospitalName;
-    }
-
-    void Hospital::setAddress(string HAddress)
-    {
-        this->Address=HAddress;
-    }
-    string Hospital::getAddress()
-    {
-        return Address;
+        return Ownership;
     }
 
     void Hospital::DisplayData()
     {
         cout<<endl<<"\t\t\t*************************************************";
         cout<<endl<<"\t\t\t**************Hospital Information***************";
-        cout<<endl<<endl<<"Registration Number : "<<Hospital::HospitalRegistrationNumber;
-        cout<<endl<<"Name : "<<Hospital::HospitalName;
-        cout<<endl<<"Address : "<<Hospital::Address;
+        cout<<endl<<endl<<"Registration Number : "<<Patient::id;
+        cout<<endl<<"Name : "<<Patient::name;
+        cout<<endl<<"Address : "<<Patient::address;
+        cout<<endl<<"Ownership : "<<Hospital::address;
         cout<<endl<<"\t\t\t*************************************************";
 
     }

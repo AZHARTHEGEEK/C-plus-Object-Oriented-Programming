@@ -3,9 +3,9 @@
 using namespace std;
 class Patient
 {
-private:
+public:
     double id;
-    string patientname;
+    string name;
     string address;
     double contactnumber;
     string email;

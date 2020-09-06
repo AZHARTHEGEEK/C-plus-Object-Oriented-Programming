@@ -1,28 +1,27 @@
-#ifndef included_HOSPITAL_H
-#define included_HOSPITAL_H
-using namespace std;
+//#ifndef included_HOSPITAL_H
+//#define included_HOSPITAL_H
 
-class Hospital
+#ifndef Hospital_H
+#define Hospital_H
+using namespace std;
+#include"Doctor.h"
+#include"Patient.h"
+
+class Doctor;
+class Hospital : public Patient
 {
 private:
-    double HospitalRegistrationNumber;
-    string HospitalName;
-    string Address;
+
 
 public:
+    string Ownership;
     //Default Constructer
     Hospital();
     // Overloaded Constructer
-    Hospital(double,string,string);
+    Hospital(double,string,string,string);
 
-    void setHospitalRegistrationNumber(double);
-    double getHospitalRegistrationNumber();
-
-    void setHospitalName(string);
-    string getHospitalName();
-
-    void setAddress(string);
-    string getAddress();
+    void setPublicOrPrivateHospital(string);
+    string getPublicOrPrivateHospital();
 
     void DisplayData();
 };

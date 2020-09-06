@@ -13,7 +13,7 @@ using namespace std;
     Patient::Patient(double pid,string pname,string paddress,double pcontactnumber,string pemail,int patientage,string psex,string bg)
     {
        this->id=pid;
-       this->patientname= pname;
+       this->name= pname;
        this->address= paddress;
        this->contactnumber= pcontactnumber;
        this->email=pemail;
@@ -35,11 +35,11 @@ using namespace std;
 
     void Patient::setpatientname(string pname)
     {
-        this->patientname= pname;
+        this->name= pname;
     }
     string Patient::getpatientname()
     {
-        return patientname;
+        return name;
     }
 
     void Patient::setaddress(string paddress)
@@ -102,7 +102,7 @@ using namespace std;
     {
         cout<<endl<<"\t\t\t*************************************************";
         cout<<endl<<"\t\t\t*****Currently Showing Data of ID : "<< Patient::id <<"*****"<<endl;
-        cout<<endl<<"\t\t\tName : "<< Patient::patientname;
+        cout<<endl<<"\t\t\tName : "<< Patient::name;
         cout<<endl<<"\t\t\tAddress : "<< Patient::address;
         cout<<endl<<"\t\t\tContact Number : "<< Patient::contactnumber;
         cout<<endl<<"\t\t\tEmail : "<<Patient::email;
