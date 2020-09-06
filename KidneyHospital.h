@@ -1,7 +1,9 @@
 #ifndef included_CHILDREN_H
 #define included_CHILDREN_H
 #include"Hospital.h"
+#include"Doctor.h"
 using namespace std;
+class Doctor;
 class KidneyHospital : public Hospital
 {
 private:
@@ -12,7 +14,8 @@ private:
 
 public:
     KidneyHospital();
-    KidneyHospital(double,string,string,string,string,string,string);
+    KidneyHospital(double,string,string,string,string,string,string,int);
+    Doctor DocComposition;
 
     void setSizeOfHos(string);
     string getSizeOfHos();

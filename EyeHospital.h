@@ -13,9 +13,10 @@ private:
 
 
 public:
-    Doctor newObj;
-    EyeHospital(double,string,string,string,string,string,int);
+
+    EyeHospital(double,string,string,string,string,string,string,int);
     EyeHospital();
+    Doctor DocComposition;
 
     void setSizeOfHos(string);
     string getSizeOfHos();

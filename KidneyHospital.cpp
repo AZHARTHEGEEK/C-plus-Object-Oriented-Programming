@@ -8,7 +8,7 @@ using namespace std;
     {
 
     }
-    KidneyHospital::KidneyHospital(double a,string b, string c,string d,string e,string f, string g)
+    KidneyHospital::KidneyHospital(double a,string b, string c,string d,string e,string f,string g, int h)
     {
         id= a;
         name = b;
@@ -17,6 +17,7 @@ using namespace std;
         ownership = e;
         services = f;
         treatmentType = g;
+        DocComposition.TotalDocctors = h;
     }
 
     void KidneyHospital::setSizeOfHos(string d)

@@ -7,7 +7,7 @@ using namespace std;
     {
 
     }
-    EyeHospital::EyeHospital(double a,string b, string c,string d,string e,string f, int g)
+    EyeHospital::EyeHospital(double a,string b, string c,string d,string e,string f,string g, int h)
     {
         id = a;
         name = b;
@@ -15,7 +15,8 @@ using namespace std;
         sizeOfHos = d;
         Ownership = e;
         services = f;
-        newObj.TotalDocctors = g;
+        treatmentType = g;
+        DocComposition.TotalDocctors = h;
     }
 
     void EyeHospital::setSizeOfHos(string d)

@@ -106,7 +106,7 @@ int main()
 
     cout<<endl<<"\t\t\t\Doctor : "<<b<<" 's data is same as Doctor : "<<b-1<<" due to copy constructor.\n\n";
 
-    EyeHospital EyeHospitalpital_1(4563,"National Institute of Cardiovascular Diseases (NICVD)","Karachi","Medium","Public","Thallium Scan, Angiography and Echocardiography (ECHO)",b);
+    EyeHospital EyeHospitalpital_1(4563,"National Institute of Cardiovascular Diseases (NICVD)","Karachi","Medium","Public","Thallium Scan, Angiography and Echocardiography (ECHO)","Acute and Long-term Treatment",b);
     EyeHospitalUsingVector.push_back(EyeHospitalpital_1);
     EyeHospital EyeHospitalpital_2(EyeHospitalpital_1);
     EyeHospitalUsingVector.push_back(EyeHospitalpital_2);
@@ -123,7 +123,7 @@ int main()
     }
     cout<<endl<<"\t\t\tHospital : "<<c<<" 's data is same as Hospital : "<<c-1<<" due to copy constructor.\n\n";
 
-    KidneyHospital ChildrenHospital_1(88569,"National Children Hospital","Karachi","Large","Public","Allergy, Apherisi, Audiology & Brain Treatment","Acute and Long-term Treatment" );
+    KidneyHospital ChildrenHospital_1(88569,"National Children Hospital","Karachi","Large","Public","Allergy, Apherisi, Audiology & Brain Treatment","Acute and Long-term Treatment",c );
     KidneyHospitalUsingVector.push_back(ChildrenHospital_1);
     KidneyHospital ChildrenHospital_2(ChildrenHospital_1);
     KidneyHospitalUsingVector.push_back(ChildrenHospital_2);
