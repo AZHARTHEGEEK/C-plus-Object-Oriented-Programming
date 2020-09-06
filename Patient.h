@@ -1,7 +1,8 @@
 #ifndef included_PATIENT_H
 #define included_PATIENT_H
+#include"Disease.h"
 using namespace std;
-class Patient
+class Patient : public Disease
 {
 public:
     double id;
@@ -12,18 +13,14 @@ public:
     int age;
     string sex;
     string blood_group;
-
-
-
+    string pastdata;
 
 public:
     //Default Constructer
     Patient();
 
     //OverLoaded Constructer
-    Patient(double ,string ,string ,string ,string ,int ,string ,string);
-
-
+    Patient(double ,string ,string ,string ,string ,int ,string ,string,string,string,string,string);
 
     void setid(double);
     double getid();
@@ -49,6 +46,8 @@ public:
     void setblood_group(string);
     string getblood_group();
 
+    void setpastdata(string);
+    string getpastdata();
 
     void DisplayData();
 

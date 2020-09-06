@@ -10,7 +10,7 @@ using namespace std;
     }
 
     // Overloaded Constructer
-    Patient::Patient(double pid,string pname,string paddress,string pcontactnumber,string pemail,int patientage,string psex,string bg)
+    Patient::Patient(double pid,string pname,string paddress,string pcontactnumber,string pemail,int patientage,string psex,string bg,string pd,string Dname,string Dcategory,string Dlevel)
     {
        this->id=pid;
        this->name= pname;
@@ -20,6 +20,10 @@ using namespace std;
        this->age=patientage;
        this->sex=psex;
        this->blood_group=bg;
+       this->pastdata=pd;
+       this->NameofDesease=Dname;
+       this->category=Dcategory;
+       this->SeveritLevel=Dlevel;
     }
 
 
@@ -95,7 +99,14 @@ using namespace std;
     {
         return blood_group;
     }
-
+    void Patient::setpastdata(string pd)
+    {
+        this->pastdata=pd;
+    }
+    string Patient::getpastdata()
+    {
+        return pastdata;
+    }
 
 
     void Patient::DisplayData()
@@ -103,13 +114,17 @@ using namespace std;
        /// cout<<endl<<endl<<"\t\t\t************************************************************************************";
              // cout<<endl<<"\t\t\t                       Currently Showing Data of ID : "<<Patient::id<<endl;
         cout<<endl<<endl<<"\t\t\t************************************************************************************";
-        cout<<endl<<"\t\t\tName : "<< Patient::name;
-        cout<<endl<<"\t\t\tAddress : "<< Patient::address;
-        cout<<endl<<"\t\t\tContact Number : "<< Patient::contactnumber;
-        cout<<endl<<"\t\t\tEmail : "<<Patient::email;
-        cout<<endl<<"\t\t\tAge : "<<Patient::age;
-        cout<<endl<<"\t\t\tSex : "<< Patient::sex;
-        cout<<endl<<"\t\t\tBlood Group : "<< Patient::blood_group;
+        cout<<endl<<"\t\t\tName                            :  "<< Patient::name;
+        cout<<endl<<"\t\t\tAddress                         :  "<< Patient::address;
+        cout<<endl<<"\t\t\tContact Number                  :  "<< Patient::contactnumber;
+        cout<<endl<<"\t\t\tEmail                           :  "<<Patient::email;
+        cout<<endl<<"\t\t\tAge                             :  "<<Patient::age;
+        cout<<endl<<"\t\t\tSex                             : "<< Patient::sex;
+        cout<<endl<<"\t\t\tBlood Group                     : "<< Patient::blood_group;
+        cout<<endl<<"\t\t\tPatient Disease Name            :  "<<Disease::NameofDesease;
+        cout<<endl<<"\t\t\tPatient Disease Category        :  "<<Disease::category;
+        cout<<endl<<"\t\t\tPatient Disease Severity Level  :  "<<Disease::SeveritLevel;
+        cout<<endl<<"\t\t\tPetient Past Disease            :  "<< Patient::pastdata;
         cout<<endl<<"\t\t\t************************************************************************************";
 
     }

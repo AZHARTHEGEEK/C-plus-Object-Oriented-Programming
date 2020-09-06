@@ -58,9 +58,9 @@ using namespace std;
         //cout<<endl<<endl<<"\t\t\t************************************************************************************";
               //cout<<endl<<"\t\t\t                           Doctor Information"<<endl;
               cout<<endl<<"\t\t\t************************************************************************************";
-        cout<<endl<<"\t\t\t\Doctor Name: \t\t\t"<<name;
-        cout<<endl<<"\t\t\tDoctor's Specialization:\t"<<specialization;
-        cout<<endl<<"\t\t\tGrade: \t\t\t\t"<<grade;
-        cout<<endl<<"\t\t\tDoctor Charges: \t\t\t" << charges<<endl;
+        cout<<endl<<"\t\t\tDoctor Name             : "<<name;
+        cout<<endl<<"\t\t\tDoctor's Specialization : "<<specialization;
+        cout<<endl<<"\t\t\tGrade                   : "<<grade;
+        cout<<endl<<"\t\t\tDoctor Charges          : " << charges<<endl;
         cout<<endl<<"\t\t\t************************************************************************************";
     }

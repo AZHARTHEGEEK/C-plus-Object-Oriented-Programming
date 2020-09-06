@@ -36,10 +36,22 @@
 		<Unit filename="Disease.h" />
 		<Unit filename="Doctor.cpp" />
 		<Unit filename="Doctor.h" />
+		<Unit filename="EyeHospital.cpp" />
+		<Unit filename="EyeHospital.h" />
 		<Unit filename="Hospital.cpp" />
 		<Unit filename="Hospital.h" />
+		<Unit filename="KidneyHospital.cpp" />
+		<Unit filename="KidneyHospital.h" />
+		<Unit filename="Match.cpp" />
+		<Unit filename="Match.h" />
 		<Unit filename="Patient.cpp" />
 		<Unit filename="Patient.h" />
+		<Unit filename="Player.CPP" />
+		<Unit filename="Player.h" />
+		<Unit filename="Team.cpp" />
+		<Unit filename="Team.h" />
+		<Unit filename="Venue.cpp" />
+		<Unit filename="Venue.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

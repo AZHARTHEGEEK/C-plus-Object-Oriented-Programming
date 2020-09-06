@@ -38,14 +38,14 @@ int main()
     vector<Patient> Ptnt;
     vector<Disease> Dis;
 //string Dname,string Dlevel,string Dcategory,string PDsease
-    Disease Disease_1("Dengue Fever","Normal","Undifferentiated Fever","Hepatitis");
+    Disease Disease_1("Dengue Fever","Normal","Undifferentiated Fever");
     Dis.push_back(Disease_1);
 
-    Disease Disease_2("Tuberculosis","Exposure","lung disease","Sughar");
+    Disease Disease_2("Tuberculosis","Exposure","lung disease");
     Dis.push_back(Disease_2);
 
-    Disease Disease_3("Coronary artery (CAD)","Stage A,","Microvascular","Blood Pressure");
-    Dis.push_back(Disease_2);
+    Disease Disease_3("Coronary artery (CAD)","Stage A,","Microvascular");
+    Dis.push_back(Disease_3);
 
     Disease Disease_4(Disease_3);
     Dis.push_back(Disease_4);
@@ -54,13 +54,13 @@ int main()
          cout<<endl<<"\t\t\t                          HOSPITAL MANAGEMENT SYSTEM                                ";
          cout<<endl<<"\t\t\t************************************************************************************";
 /////,string pemail,int patientage,string psex,string bg
-    Patient Patient_1(1001,"Mifzal","Khamosh Colony Block D","03120001478","mifzal567@hotmail.com",23,"Male","B-");
+    Patient Patient_1(1001,"Mifzal","Khamosh Colony Block D","03120001478","mifzal567@hotmail.com",23,"Male","B-","Nill",Disease_1.getNameofDesease(),Disease_1.getCategory(),Disease_1.getSeveritLevel());
     Ptnt.push_back(Patient_1);
 
-    Patient Patient_2(1002,"Saad","Nazimabad No 2 Block H","03150045879","saaddesigner@hotmail.com",20,"Male","O-");
+    Patient Patient_2(1002,"Saad","Nazimabad No 2 Block H","03150045879","saaddesigner@hotmail.com",20,"Male","O-","Diabetes",Disease_2.getNameofDesease(),Disease_2.getCategory(),Disease_2.getSeveritLevel());
     Ptnt.push_back(Patient_2);
 
-    Patient Patient_3(1003,"Reham Khan","DHA Phase 2","03124564785","rehamprincess786@gmail.com",30,"Fe-Male","A+");
+    Patient Patient_3(1003,"Reham Khan","DHA Phase 2","03124564785","rehamprincess786@gmail.com",30,"Fe-Male","A+","Blood Pressure",Disease_3.getNameofDesease(),Disease_3.getCategory(),Disease_3.getSeveritLevel());
     Ptnt.push_back(Patient_3);
 
     Patient Patient_4(Patient_3);
@@ -98,13 +98,13 @@ int main()
     b = Dctr.size();
     Doctor Dctr_Obj;
     Dctr_Obj.setTotalDoctrs(b);
-    for(unsigned int i = 0; i < b; i++)
+    for( int i = 0; i < b; i++)
     {
         cout<<endl<<"\t\t\tDoctor : "<<i+1<<endl;
         Dctr[i].DisplayData();
     }
 
-    cout<<endl<<"\t\t\t\Doctor : "<<b<<" 's data is same as Doctor : "<<b-1<<" due to copy constructor.\n\n";
+    cout<<endl<<"\t\t\tDoctor : "<<b<<" 's data is same as Doctor : "<<b-1<<" due to copy constructor.\n\n";
 
     EyeHospital EyeHospitalpital_1(4563,"National Institute of Cardiovascular Diseases (NICVD)","Karachi","Medium","Public","Thallium Scan, Angiography and Echocardiography (ECHO)","Acute and Long-term Treatment",b);
     EyeHospitalUsingVector.push_back(EyeHospitalpital_1);
@@ -116,7 +116,7 @@ int main()
          cout<<endl<<"\t\t\t************************************************************************************";
    cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<EyeHospitalUsingVector.size() << endl << endl;
     c = EyeHospitalUsingVector.size();
-    for(unsigned int i = 0; i < c; i++)
+    for( int i = 0; i < c; i++)
     {
         cout<<endl<<"\t\t\tHospital : "<<i+1<<endl;
         EyeHospitalUsingVector[i].DisplayData();
@@ -133,7 +133,7 @@ cout<<endl<<endl<<"\t\t\t*******************************************************
       cout<<endl<<"\t\t\t************************************************************************************";
 cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<KidneyHospitalUsingVector.size() << endl << endl;
     d = KidneyHospitalUsingVector.size();
-    for(unsigned int i = 0; i < d; i++)
+    for( int i = 0; i < d; i++)
     {
         cout<<endl<<"\t\t\tHospital # "<<i+1<<endl;
         KidneyHospitalUsingVector[i].displayData();

@@ -5,16 +5,14 @@
 using namespace std;
 class Disease
 {
-private:
+public:
     string NameofDesease;
     string SeveritLevel;
     string category;
-    string pastdesease;
-public:
     //Default Constructer
     Disease();
         // Overloaded Constructer
-    Disease(string,string,string,string);
+    Disease(string,string,string);
 
     void setNameofDesease(string);
     string getNameofDesease();
@@ -25,8 +23,7 @@ public:
     void setCategory(string);
     string getCategory();
 
-    void setpastdesease(string);
-    string getpastdesease();
+
 
     void DisplayData();
 };
