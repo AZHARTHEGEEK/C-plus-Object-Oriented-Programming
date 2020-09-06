@@ -7,7 +7,7 @@
 	<iostream>
 	"Doctor.h"
 
-1599395157 source:c:\users\hp\documents\final exam oop\ csc19f069_ab_finalexam\main.cpp
+1599398888 source:c:\users\hp\documents\final exam oop\ csc19f069_ab_finalexam\main.cpp
 	<iostream>
 	<vector>
 	"Doctor.h"
@@ -17,7 +17,7 @@
 	"KidneyHospital.h"
 	"Disease.h"
 
-1599387473 source:c:\users\hp\documents\final exam oop\ csc19f069_ab_finalexam\patient.cpp
+1599396687 source:c:\users\hp\documents\final exam oop\ csc19f069_ab_finalexam\patient.cpp
 	<iostream>
 	"Patient.h"
 

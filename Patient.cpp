@@ -100,8 +100,8 @@ using namespace std;
 
     void Patient::DisplayData()
     {
-        cout<<endl<<"\t\t\t*************************************************";
-        cout<<endl<<"\t\t\t*****Currently Showing Data of ID : "<< Patient::id <<"*****"<<endl;
+        cout<<endl<<endl<<"\t\t\t************************************************************************************";
+              cout<<endl<<"\t\t\t                       Currently Showing Data of ID : "<<Patient::id<<endl;
         cout<<endl<<"\t\t\tName : "<< Patient::name;
         cout<<endl<<"\t\t\tAddress : "<< Patient::address;
         cout<<endl<<"\t\t\tContact Number : "<< Patient::contactnumber;
@@ -109,6 +109,6 @@ using namespace std;
         cout<<endl<<"\t\t\tAge : "<<Patient::age;
         cout<<endl<<"\t\t\tSex : "<< Patient::sex;
         cout<<endl<<"\t\t\tBlood Group : "<< Patient::blood_group;
-        cout<<endl<<"\t\t\t*************************************************";
+        cout<<endl<<"\t\t\t************************************************************************************";
 
     }

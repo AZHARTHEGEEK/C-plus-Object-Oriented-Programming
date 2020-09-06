@@ -37,7 +37,7 @@ int main()
     vector<Doctor> Dctr;
     vector<Patient> Ptnt;
     vector<Disease> Dis;
-
+//string Dname,string Dlevel,string Dcategory,string PDsease
     Disease Disease_1("Diabetes","Critical","Type 1 Diabetes","Nill");
     Dis.push_back(Disease_1);
 
@@ -77,9 +77,9 @@ int main()
           cout<<endl<<"\t\t\t************************************************************************************";
           cout<<endl<<"\t\t\tNumber of Registered Patients : "<<Ptnt.size() << endl << endl;
     a = Ptnt.size();
-    for(unsigned int i = 0; i < a; i++)
+    for( int i = 0; i < a; i++)
     {
-        cout<<"\n\t\t\tDoctor # "<<i+1<<endl;
+        cout<<endl<<"\n\t\t\tPatient # "<<i+1;
         Ptnt[i].DisplayData();
     }
 
@@ -162,7 +162,7 @@ cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<ChlHos.size() << en
 
     }
 
-*?
+*/
    /* Doctor Dctr1("Dr. Muhammad Adnan","Surgical Doctor",19);
     Doctor Dctr2(Dctr1);
     Dctr2.displayData();
