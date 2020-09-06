@@ -57,6 +57,7 @@ using namespace std;
 
     void KidneyHospital::displayData()
     {
+        cout<<endl<<"\t\t\t************************************************************************************";
         cout << endl << "\t\t\tHospital's Registeration No. : " << getid();
         cout << endl << "\t\t\tHospital's Name :" << getName();
         cout << endl << "\t\t\tHospital's Location : " << getaddress();
@@ -64,5 +65,6 @@ using namespace std;
         cout << endl << "\t\t\tHospital's Ownership :" << getOwnership();
         cout << endl << "\t\t\tHospital's Services : " << getServices();
         cout << endl << "\t\t\tHospital's Treatment Type : " << getTreatmentType() << endl;
+        cout<<endl<<"\t\t\t************************************************************************************";
     }
 

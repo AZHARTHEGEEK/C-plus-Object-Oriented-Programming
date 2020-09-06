@@ -54,12 +54,13 @@ using namespace std;
     }
     void Disease::DisplayData()
     {
-        cout<<endl<<"\t\t\t*************************************************";
-        cout<<endl<<"\t\t\t**************Disease Information***************";
+        //cout<<endl<<"\t\t\t************************************************************************************";
+        //cout<<endl<<"\t\t\t                             Disease Information";
+        cout<<endl<<"\t\t\t************************************************************************************";
         cout<<endl<<"\t\t\tDisease Name:\t\t\t"<<Disease::NameofDesease;
         cout<<endl<<"\t\t\tDisease Category:\t\t"<<Disease::category;
         cout<<endl<<"\t\t\tDisease Severity Level:\t\t\t"<<Disease::SeveritLevel;
         cout<<endl<<"\t\t\tPast Disease : "<< Disease::pastdesease;
-        cout<<endl<<"\t\t\t*************************************************";
+        cout<<endl<<"\t\t\t************************************************************************************";
     }
 

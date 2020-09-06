@@ -100,8 +100,9 @@ using namespace std;
 
     void Patient::DisplayData()
     {
+       /// cout<<endl<<endl<<"\t\t\t************************************************************************************";
+             // cout<<endl<<"\t\t\t                       Currently Showing Data of ID : "<<Patient::id<<endl;
         cout<<endl<<endl<<"\t\t\t************************************************************************************";
-              cout<<endl<<"\t\t\t                       Currently Showing Data of ID : "<<Patient::id<<endl;
         cout<<endl<<"\t\t\tName : "<< Patient::name;
         cout<<endl<<"\t\t\tAddress : "<< Patient::address;
         cout<<endl<<"\t\t\tContact Number : "<< Patient::contactnumber;

@@ -55,11 +55,12 @@ using namespace std;
 
     void Doctor::DisplayData()
     {
-        cout<<endl<<"\t\t\t*************************************************";
-        cout<<endl<<"\t\t\t****************Doctor Information***************"<<endl;
+        //cout<<endl<<endl<<"\t\t\t************************************************************************************";
+              //cout<<endl<<"\t\t\t                           Doctor Information"<<endl;
+              cout<<endl<<"\t\t\t************************************************************************************";
         cout<<endl<<"\t\t\t\Doctor Name: \t\t\t"<<name;
         cout<<endl<<"\t\t\tDoctor's Specialization:\t"<<specialization;
         cout<<endl<<"\t\t\tGrade: \t\t\t\t"<<grade;
         cout<<endl<<"\t\t\tDoctor Charges: \t\t\t" << charges<<endl;
-        cout<<endl<<"\t\t\t*************************************************";
+        cout<<endl<<"\t\t\t************************************************************************************";
     }

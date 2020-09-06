@@ -31,42 +31,36 @@ int main()
     cin>>switchtoManagementSystem;
     if (switchtoManagementSystem == '1')
     {
-
-    vector<EyeHospital> CarHos;
-    vector<KidneyHospital> ChlHos;
+    system("CLS");
+    vector<EyeHospital> EyeHospitalUsingVector;
+    vector<KidneyHospital> KidneyHospitalUsingVector;
     vector<Doctor> Dctr;
     vector<Patient> Ptnt;
     vector<Disease> Dis;
 //string Dname,string Dlevel,string Dcategory,string PDsease
-    Disease Disease_1("Diabetes","Critical","Type 1 Diabetes","Nill");
+    Disease Disease_1("Dengue Fever","Normal","Undifferentiated Fever","Hepatitis");
     Dis.push_back(Disease_1);
 
-    Disease Disease_2("Cancer","Stage II","leukemia","Sughar");
+    Disease Disease_2("Tuberculosis","Exposure","lung disease","Sughar");
     Dis.push_back(Disease_2);
 
-    Disease Disease_3("Hepatitis C","Stage I","Hepatitis","Blood Pressure");
+    Disease Disease_3("Coronary artery (CAD)","Stage A,","Microvascular","Blood Pressure");
     Dis.push_back(Disease_2);
 
     Disease Disease_4(Disease_3);
     Dis.push_back(Disease_4);
 
-
-    char classselection;
-    cout<<endl<<endl<<"\t\t\t************************************************************************************";
-    cout<<endl<<endl<<"\t\t\t         CSC 104 OBJECT ORIENTED PROGRAMMING (OOP) FINAL EXAM (SPRING 2020)"<<endl;
-          cout<<endl<<"\t\t\t************************************************************************************";
-
-   //cout<<endl<<endl<<"\t\t\t************************************************************************************";
+  cout<<endl<<endl<<"\t\t\t************************************************************************************";
          cout<<endl<<"\t\t\t                          HOSPITAL MANAGEMENT SYSTEM                                ";
-         //cout<<endl<<"\t\t\t************************************************************************************";
+         cout<<endl<<"\t\t\t************************************************************************************";
 /////,string pemail,int patientage,string psex,string bg
-    Patient Patient_1(8745,"Ali Khan","DHA Phase 2","03120001478","azhar567@hotmail.com",29,"Male","B+");
+    Patient Patient_1(1001,"Mifzal","Khamosh Colony Block D","03120001478","mifzal567@hotmail.com",23,"Male","B-");
     Ptnt.push_back(Patient_1);
 
-    Patient Patient_2(874598,"Ali Khan","DHA Phase 2","03120001478","azhar567@hotmail.com",29,"Male","B+");
+    Patient Patient_2(1002,"Saad","Nazimabad No 2 Block H","03150045879","saaddesigner@hotmail.com",20,"Male","O-");
     Ptnt.push_back(Patient_2);
 
-    Patient Patient_3(874598,"Ali Khan","DHA Phase 2","03120001478","azhar567@hotmail.com",29,"Male","B+");
+    Patient Patient_3(1003,"Reham Khan","DHA Phase 2","03124564785","rehamprincess786@gmail.com",30,"Fe-Male","A+");
     Ptnt.push_back(Patient_3);
 
     Patient Patient_4(Patient_3);
@@ -113,43 +107,42 @@ int main()
     cout<<endl<<"\t\t\t\Doctor : "<<b<<" 's data is same as Doctor : "<<b-1<<" due to copy constructor.\n\n";
 
     EyeHospital EyeHospitalpital_1(4563,"National Institute of Cardiovascular Diseases (NICVD)","Karachi","Medium","Public","Thallium Scan, Angiography and Echocardiography (ECHO)",b);
-    CarHos.push_back(EyeHospitalpital_1);
+    EyeHospitalUsingVector.push_back(EyeHospitalpital_1);
     EyeHospital EyeHospitalpital_2(EyeHospitalpital_1);
-    CarHos.push_back(EyeHospitalpital_2);
+    EyeHospitalUsingVector.push_back(EyeHospitalpital_2);
 
    cout<<endl<<endl<<"\t\t\t************************************************************************************";
          cout<<endl<<"\t\t\t                                  Eye Hospital's Data                                     ";
          cout<<endl<<"\t\t\t************************************************************************************";
-   cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<CarHos.size() << endl << endl;
-    c = CarHos.size();
+   cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<EyeHospitalUsingVector.size() << endl << endl;
+    c = EyeHospitalUsingVector.size();
     for(unsigned int i = 0; i < c; i++)
     {
         cout<<endl<<"\t\t\tHospital : "<<i+1<<endl;
-        CarHos[i].DisplayData();
+        EyeHospitalUsingVector[i].DisplayData();
     }
     cout<<endl<<"\t\t\tHospital : "<<c<<" 's data is same as Hospital : "<<c-1<<" due to copy constructor.\n\n";
 
     KidneyHospital ChildrenHospital_1(88569,"National Children Hospital","Karachi","Large","Public","Allergy, Apherisi, Audiology & Brain Treatment","Acute and Long-term Treatment" );
-    ChlHos.push_back(ChildrenHospital_1);
+    KidneyHospitalUsingVector.push_back(ChildrenHospital_1);
     KidneyHospital ChildrenHospital_2(ChildrenHospital_1);
-    ChlHos.push_back(ChildrenHospital_2);
+    KidneyHospitalUsingVector.push_back(ChildrenHospital_2);
 
 cout<<endl<<endl<<"\t\t\t************************************************************************************";
       cout<<endl<<"\t\t\t                            Kidney Hospital's Data                                  ";
       cout<<endl<<"\t\t\t************************************************************************************";
-cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<ChlHos.size() << endl << endl;
-    d = ChlHos.size();
+cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<KidneyHospitalUsingVector.size() << endl << endl;
+    d = KidneyHospitalUsingVector.size();
     for(unsigned int i = 0; i < d; i++)
     {
         cout<<endl<<"\t\t\tHospital # "<<i+1<<endl;
-        ChlHos[i].displayData();
+        KidneyHospitalUsingVector[i].displayData();
     }
     cout<<endl<<"\t\t\tHospital : "<<d<<" 's data is same as Hospital : "<<d-1<<" due to copy constructor.\n\n";
 
     }
-/*
 
-    else if (classselection == '2')
+    else if (switchtoManagementSystem == '2')
     {
         system("CLS");
         //cricketManagementSystem();
@@ -162,30 +155,6 @@ cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<ChlHos.size() << en
 
     }
 
-*/
-   /* Doctor Dctr1("Dr. Muhammad Adnan","Surgical Doctor",19);
-    Doctor Dctr2(Dctr1);
-    Dctr2.displayData();
-
-    Patient Ptnt1(874598,"Ali Khan",29);
-    Patient Ptnt2(Ptnt1);
-    Ptnt2.displayData();
-
-    Hospital Hsptl1(748596,"Karachi Public Hospital","Saudabad Karachi");
-    Hospital Hsptl2 = Hsptl1;
-    Hsptl2.displayData();
-
-    Disease Dis1("Diabetes","Critical","Type 1 Diabetes");
-    Disease Dis2 = Dis1;
-    Dis2.displayData();
-
-    EyeHospital CarHos1(4563,"National Institute of Cardiovascular Diseases (NICVD)","Karachi","Medium","Public","Thallium Scan, Angiography and Echocardiography (ECHO)");
-    EyeHospital CarHos2(CarHos1);
-    CarHos2.displayData();
-
-    EyeHospital ChlHos1(88569,"National Children Hospital","Karachi","Large","Public","Allergy, Apherisi, Audiology & Brain Treatment","Acute and Long-term Treatment");
-    EyeHospital ChlHos2 = ChlHos1;
-    ChlHos2.displayData();*/
 
     return 0;
 }
