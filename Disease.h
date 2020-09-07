@@ -1,4 +1,3 @@
-
 #ifndef included_DISEASE_H
 #define included_DISEASE_H
 
@@ -9,9 +8,10 @@ public:
     string NameofDesease;
     string SeveritLevel;
     string category;
+
     //Default Constructer
     Disease();
-        // Overloaded Constructer
+    // Overloaded Constructer
     Disease(string,string,string);
 
     void setNameofDesease(string);
@@ -22,8 +22,6 @@ public:
 
     void setCategory(string);
     string getCategory();
-
-
 
     void DisplayData();
 };

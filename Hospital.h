@@ -8,16 +8,12 @@ using namespace std;
 class Doctor;
 class Hospital : public Patient
 {
-private:
-
-
 public:
+    //Default Constructer
     Hospital();
     int objNo;
     static int objCnt;
-
     string Ownership;
-    //Default Constructer
 
     // Overloaded Constructer
     Hospital(double,string,string,string);
@@ -28,4 +24,4 @@ public:
     void DisplayData();
 };
 
-#endif // included_HOSPITAL_H
+#endif // Hospital_H

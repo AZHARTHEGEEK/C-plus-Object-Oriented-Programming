@@ -1,20 +1,20 @@
-
-
 #include<iostream>
 #include"KidneyHospital.h"
 using namespace std;
 
+    //Default Constructer
     KidneyHospital::KidneyHospital()
     {
 
     }
+        //Over Loaded Constructer
     KidneyHospital::KidneyHospital(double a,string b, string c,string d,string e,string f,string g, int h)
     {
         id= a;
         name = b;
         address = c;
         sizeOfHos = d;
-        ownership = e;
+        Ownership = e;
         services = f;
         treatmentType = g;
         DocComposition.TotalDocctors = h;
@@ -29,14 +29,6 @@ using namespace std;
         return sizeOfHos;
     }
 
-    void KidneyHospital::setOwnership(string e)
-    {
-        ownership = e;
-    }
-    string KidneyHospital::getOwnership()
-    {
-        return ownership;
-    }
 
     void KidneyHospital::setServices(string f)
     {
@@ -56,16 +48,16 @@ using namespace std;
         return treatmentType;
     }
 
-    void KidneyHospital::displayData()
+    void KidneyHospital::DisplayData()
     {
         cout<<endl<<"\t\t\t************************************************************************************";
-        cout << endl << "\t\t\tHospital's Registeration No. : " << getid();
-        cout << endl << "\t\t\tHospital's Name :" << getName();
-        cout << endl << "\t\t\tHospital's Location : " << getaddress();
-        cout << endl << "\t\t\tHospital's Size : " << getSizeOfHos();
-        cout << endl << "\t\t\tHospital's Ownership :" << getOwnership();
-        cout << endl << "\t\t\tHospital's Services : " << getServices();
-        cout << endl << "\t\t\tHospital's Treatment Type : " << getTreatmentType() << endl;
+        cout << endl << "\t\t\tHospital's Registration No.  : " << Patient::getid();
+        cout << endl << "\t\t\tHospital's Name              : " << Patient::getName();
+        cout << endl << "\t\t\tHospital's Location          : " << Patient::getaddress();
+        cout << endl << "\t\t\tHospital's Size              : " << KidneyHospital::getSizeOfHos();
+        cout << endl << "\t\t\tHospital's Ownership         : " << Hospital::getPublicOrPrivateHospital();
+        cout << endl << "\t\t\tHospital's Services          : " << KidneyHospital::getServices();
+        cout << endl << "\t\t\tHospital's Treatment Type    : " << KidneyHospital::getTreatmentType() << endl;
         cout<<endl<<"\t\t\t************************************************************************************";
     }
 

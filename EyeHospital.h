@@ -10,19 +10,16 @@ private:
     string sizeOfHos;
     string services;
     string treatmentType;
-
-
 public:
-
-    EyeHospital(double,string,string,string,string,string,string,int);
+    // Default Constructor
     EyeHospital();
+    //Over Loaded Constructer
+    EyeHospital(double,string,string,string,string,string,string,int);
+
     Doctor DocComposition;
 
     void setSizeOfHos(string);
     string getSizeOfHos();
-
-    void setOwnership(string);
-    string getOwnership();
 
     void setServices(string);
     string getServices();
@@ -33,6 +30,6 @@ public:
     void DisplayData();
 };
 
-#endif // included_CHILDRENHOS_H
+#endif // Children_H
 
 

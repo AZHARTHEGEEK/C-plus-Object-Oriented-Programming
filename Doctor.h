@@ -5,18 +5,20 @@ using namespace std;
 class Patient;
 class Doctor: public Patient
 {
-public:
+protected:
     //name
     //number
     //email
     string specialization;
     int grade;
     int charges;
-    int TotalDocctors;
 
 public:
+    int TotalDocctors;
+    //Default Constructer
     Doctor();
-    Doctor(string,string,int,int);//,int);
+     //Over Loaded Constructer
+    Doctor(string,string,int,int);
 
     void setSpecialization(string);
     string getSpecialization();
@@ -27,10 +29,8 @@ public:
     void setcharges(int);
     int geycharges();
 
-
     void setTotalDoctrs(int);
     int getTotalDoctrs();
-
 
     void DisplayData();
 };

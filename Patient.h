@@ -22,6 +22,7 @@ public:
     //OverLoaded Constructer
     Patient(double ,string ,string ,string ,string ,int ,string ,string,string,string,string,string);
 
+
     void setid(double);
     double getid();
 
@@ -50,7 +51,6 @@ public:
     string getpastdata();
 
     void DisplayData();
-
 
 };
 #endif // included_PATIENT_H

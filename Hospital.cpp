@@ -30,11 +30,11 @@ Hospital::Hospital()
     {
         //cout<<endl<<"\t\t\t************************************************************************************";
         //cout<<endl<<"\t\t\t                            Hospital Information ";
-        cout<<endl<<"\t\t\t************************************************************************************";
-        cout<<endl<<endl<<"\t\t\tRegistration Number : "<<Patient::id;
-        cout<<endl<<"\t\t\tName : "<<Patient::name;
-        cout<<endl<<"\t\t\tAddress : "<<Patient::address;
-        cout<<endl<<"\t\t\tOwnership : "<<Hospital::Ownership;
+        cout<<endl<<"\t\t\t************************************************************************************"<<endl<<endl;
+              cout<<"\t\t\tRegistration Number : "<<Patient::id;
+        cout<<endl<<"\t\t\tName                : "<<Patient::name;
+        cout<<endl<<"\t\t\tAddress             : "<<Patient::address;
+        cout<<endl<<"\t\t\tOwnership           : "<<Hospital::Ownership;
         cout<<endl<<"\t\t\t************************************************************************************";
 
     }

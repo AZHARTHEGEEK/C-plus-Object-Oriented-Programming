@@ -13,8 +13,6 @@ using namespace std;
         this->NameofDesease = Dname;
         this->SeveritLevel = Dlevel;
         this->category = Dcategory;
-
-
     }
 
     void Disease::setNameofDesease(string Dname)
@@ -50,9 +48,9 @@ using namespace std;
         cout<<endl<<"\t\t\t************************************************************************************";
         cout<<endl<<"\t\t\t                             Disease Information";
         cout<<endl<<"\t\t\t************************************************************************************";
-        cout<<endl<<"\t\t\tDisease Name:\t\t\t"<<Disease::NameofDesease;
-        cout<<endl<<"\t\t\tDisease Category : "<<Disease::category;
-        cout<<endl<<"\t\t\tDisease Severity Level :"<<Disease::SeveritLevel;
+        cout<<endl<<"\t\t\tDisease Name           : "<<Disease::NameofDesease;
+        cout<<endl<<"\t\t\tDisease Category       : "<<Disease::category;
+        cout<<endl<<"\t\t\tDisease Severity Level : "<<Disease::SeveritLevel;
         cout<<endl<<"\t\t\t************************************************************************************";
     }
 
