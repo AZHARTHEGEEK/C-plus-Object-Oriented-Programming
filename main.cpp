@@ -145,7 +145,7 @@ cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<KidneyHospitalUsing
     d = KidneyHospitalUsingVector.size();
     for( int i = 0; i < d; i++)
     {
-        cout<<endl<<"\t\t\tData : "<<i+1<<endl;
+        cout<<endl<<"\t\t\tData : "<<i+1;
         KidneyHospitalUsingVector[i].DisplayData();
     }
     cout<<endl<<"\n\t\t\tData : "<<d<<" 's data is same as Data : "<<d-1<<" due to copy constructor.";
@@ -159,12 +159,12 @@ cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<KidneyHospitalUsing
 
     else if (switchtoManagementSystem == '2')
     {
-    int a=0,b=0,c=0,d=0;
 
+    system("CLS");
     vector<Team> TeamVector;
-    vector<Match> Mtch;
-    vector<Venue> Vnu;
-    vector<Player> Plyr;
+    vector<Match> MatchVector;
+    vector<Venue> VenueVector;
+    vector<Player> PlayerVector;
 //    vector<OneDayMatch> OneDay;
   //  vector<T20Match> T20;
   //  vector<TesTeamVectoratch> Test;
@@ -177,84 +177,82 @@ cout<<endl<<endl<<"\t\t\tNumber of Registered Hospitals : "<<KidneyHospitalUsing
           cout<<endl<<"\t\t\t                         CRICKET MANAGEMENT SYSTEM "<<endl;
                 cout<<"\t\t\t************************************************************************************";
 
-    Venue Venue_1("National Stadium","Karachi, Pakistan",25000,352);
-    Vnu.push_back(Venue_1);
+    Venue Venue1Obj("National Stadium","Karachi, Pakistan",25000,352);
+    VenueVector.push_back(Venue1Obj);
 
-    Venue Venue_2("Gaddafi Stadium","Lahore, Pakistan",35000,518);
-    Vnu.push_back(Venue_2);
+    Venue Venue2Obj("Gaddafi Stadium","Lahore, Pakistan",35000,518);
+    VenueVector.push_back(Venue2Obj);
 
-    Venue Venue_3(Venue_2);
-    Vnu.push_back(Venue_3);
+    Venue Venue3Obj(Venue2Obj);
+    VenueVector.push_back(Venue3Obj);
                 cout<<endl<<"\t\t\t************************************************************************************";
-                cout<<endl<<"                                    Venue's Data";
-                      cout<<"\t\t\t************************************************************************************";
-    cout<<endl<<"\t\t\tNumber of Registered Venues : "<<Vnu.size() << endl << endl;
-    a = Vnu.size();
+                cout<<endl<<"\t\t\t                                  Venue's Data";
+                cout<<endl<<"\t\t\t************************************************************************************";
+    cout<<endl<<"\t\t\tNumber of Registered Venues : "<<VenueVector.size()<<endl;int a=0;
+    a = VenueVector.size();
     for( int i = 0; i < a; i++)
     {
-        cout<<endl<<"\t\t\tVenue : "<<i+1<<endl;
-        Vnu[i].DisplayData();
+        cout<<endl<<"\t\t\tVenue : "<<i+1;
+        VenueVector[i].DisplayData();
     }
 
-    cout<<endl<<"\t\t\tVenue # "<<a<<" 's data is same as Venue : "<<a-1<<"data due to copy constructor.\n\n";
+    cout<<endl<<"\t\t\tVenue : "<<a<<" 's data is same as Venue : "<<a-1<<"data due to copy constructor.\n";
 
 
 
 
-    Match Match_1("One Day International","Pakistan","England",false,true,false);
-    Mtch.push_back(Match_1);
+    Match Match1Obj("One Day International","Pakistan","England",false,true,false);
+    MatchVector.push_back(Match1Obj);
 
-    Match Match_2("T20 International","Pakistan","West Indies",false,true,false);
-    Mtch.push_back(Match_2);
+    Match Match2Obj("T20 International","Pakistan","West Indies",false,true,false);
+    MatchVector.push_back(Match2Obj);
 
-    Match Match_3("International Test Match","Pakistan","India",true,false,false);
-    Mtch.push_back(Match_3);
+    Match Match3Obj("International Test Match","Pakistan","India",true,false,false);
+    MatchVector.push_back(Match3Obj);
 
-    Match Match_4(Match_3);
-    Mtch.push_back(Match_4);
+    Match Match4Obj(Match3Obj);
+    MatchVector.push_back(Match4Obj);
 
     cout<<endl<<"\t\t\t************************************************************************************";
     cout<<endl<<"\t\t\t                                 Matches' Data";
-    cout<<"\t\t\t************************************************************************************";
-    cout<<endl<<"\t\t\tNumber of Scheduled Matches : "<<Mtch.size() << endl << endl;
-    b = Mtch.size();
+    cout<<endl<<"\t\t\t************************************************************************************";
+    cout<<endl<<"\t\t\tNumber of Scheduled Matches : "<<MatchVector.size()<<endl<<endl;int b=0;
+    b = MatchVector.size();
     for( int i = 0; i < b; i++)
     {
         cout<<endl<<"\t\t\tMatch : "<<i+1<<endl;
-        Mtch[i].DisplayData();
+        MatchVector[i].DisplayData();
     }
 
     cout<<endl<<"\t\t\tMatch : "<<b<<" 's data is same as Match : "<<b-1<<" data due to copy constructor.\n\n";
 
+    Player Player1Obj("Babar Ali","Pakistani","Pakistan",141,"Batsman","9th");
+    PlayerVector.push_back(Player1Obj);
 
-    Player Player_1("Babar Ali","Pakistani","Pakistan",141,"Batsman","9th");
-    Plyr.push_back(Player_1);
+    Player Player2Obj("Taimoor Hussain","Pakistani","Pakistan",15,"Bowler","158th");
+    PlayerVector.push_back(Player2Obj);
 
-    Player Player_2("Taimoor Hussain","Pakistani","Pakistan",15,"Bowler","158th");
-    Plyr.push_back(Player_2);
+    Player Player3Obj("Salman Ali","Pakistani","Pakistan",81,"Batsman","55th");
+    PlayerVector.push_back(Player3Obj);
 
-    Player Player_3("Salman Ali","Pakistani","Pakistan",81,"Batsman","55th");
-    Plyr.push_back(Player_3);
-
-    Player Player_4(Player_3);
-    Plyr.push_back(Player_4);
+    Player Player4Obj(Player3Obj);
+    PlayerVector.push_back(Player4Obj);
     cout<<endl<<"\t\t\t************************************************************************************";
     cout<<endl<<"\t\t\t                                    Players' Data";
     cout<<endl<<"\t\t\t************************************************************************************";
-    cout<<endl<<"\t\t\tNumber of Registered Players : "<<Plyr.size() << endl << endl;
-    c = Plyr.size();
+    cout<<endl<<"\t\t\tNumber of Registered Players : "<<PlayerVector.size()<<endl;int c=0;
+    c = PlayerVector.size();
     for( int i = 0; i < c; i++)
     {
-        cout<<endl<<"\t\t\tPlayer : "<<i+1<<endl;
-        Plyr[i].DisplayData();
+        cout<<endl<<"\t\t\tPlayer : "<<i+1;
+        PlayerVector[i].DisplayData();
     }
 
     cout<<endl<<"\t\t\tPlayer : "<<c<<" 's data is same as Player : "<<c-1<<" due to copy constructor.\n\n";
-
     }
     else
     {
-        cout << endl << "\t\tYou have pressed a wrong key!\n\n\n";
+        cout<<endl<< "\t\t\tYou have pressed a wrong key!\n";
     }
     {
 }
